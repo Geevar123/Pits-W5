@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Movie Database (TMDB)</title>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li>
+                    <img class="logo" src="./Assets/logo/logo.svg" alt="">
+                </li>
+                <li>Movies</li>
+                <li>TV shows</li>
+                <li>People</li>
+                <li>More</li>
+            </ul>
+            <ul class="nav-right">
+                <li class="en">en</li>
+                <li>Login</li>
+                <li>Join TMDB</li>
+                <li><i class="fa-solid fa-bell"></i></li>
+                <li><i class="fa-solid fa-user"></i></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <button class="openbtn" onclick="openNav()">☰
+                </button>
+            </ul>
+        </nav>
+        <aside id="mySidebar" class="sidebar">
+            <div class="aside-head">
+                <img src="./Assets/logo/logo.svg" alt="" />
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="aside-body">
+                <div class="aside-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <hr>
+                <div class="aside-nav">
+
+                    <a href="">
+                        <li>Join TMDB</li>
+                    </a>
+                    <a href="">
+                        <li>Profile</li>
+                    </a>
+                    <a href="">
+                        <li>Notifications</li>
+                    </a>
+                    <a href="">
+                        <li class="en">en</li>
+                    </a>
+                </div>
+            </div>
+           <div class="asidebottom">
+            <button>Login</button>
+            <button>Sign Up</button>
+           </div>
+        </aside>
+    </header>
+    <div class="body-main">
+        <section class="section1">
+            <h1>Welcome.</h1>
+            <h2>Millions of movies, TV shows and people to discover. Explore now.</h2>
+            <form action="" id="form">
+                <input id="search" type="text" placeholder="Search for a movie, tv show, person......">
+                <input id="searchBtn" type="submit" value="Search">
+            </form>
+        </section>
+
+        <section class="section2">
+            <div class="sec-wrap">
+                <div class="section2-title">
+                    <h3>Discover Movies</h3>
+                    <div class="selector" id="tags">
+
+                    </div>
+                </div>
+                <div class="body_bg">
+                    <div class="section2-body" id="card_main">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer>
+        <div class="footer1">
+            <div class="foot1 foot-content">
+                <img src="./Assets/logo/logo-2.svg" alt="">
+            </div>
+            <div class="foot2 foot-content">
+                <h3>THE BASICS</h3>
+                <ul>
+                    <li>About TMDB</li>
+                    <li>Contact Us</li>
+                    <li>Support Forums</li>
+                    <li>API</li>
+                    <li>System Status</li>
+                </ul>
+            </div>
+            <div class="foot3 foot-content">
+                <h3>GET INVOLVED</h3>
+                <ul>
+                    <li>Contribution Bible</li>
+                    <li>Add New Movie</li>
+                    <li>Add New TV Show</li>
+                </ul>
+            </div>
+            <div class="foot4 foot-content">
+                <h3>COMMUNITY</h3>
+                <ul>
+                    <li>Guidelines</li>
+                    <li>Discussions</li>
+                    <li>Leaderboard</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <div class="foot5 foot-content">
+                <h3>LEGAL</h3>
+                <ul>
+                    <li>Terms of Use</li>
+                    <li>API Terms of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer2">
+            <p>Copyright © 2023, Moviedb.com. All Rights Reserved </p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/5356b8d9b5.js" crossorigin="anonymous"></script>
+    <script src="./Script/script.js"></script>
+</body>
+
+</html>
